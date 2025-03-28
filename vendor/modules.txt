@@ -1,0 +1,22 @@
+# github.com/99designs/gqlgen v0.17.68
+## explicit; go 1.23.0
+github.com/99designs/gqlgen/graphql
+github.com/99designs/gqlgen/graphql/introspection
+# github.com/agnivade/levenshtein v1.2.1
+## explicit; go 1.21
+github.com/agnivade/levenshtein
+# github.com/google/uuid v1.6.0
+## explicit
+github.com/google/uuid
+# github.com/sosodev/duration v1.3.1
+## explicit; go 1.17
+github.com/sosodev/duration
+# github.com/vektah/gqlparser/v2 v2.5.23
+## explicit; go 1.22
+github.com/vektah/gqlparser/v2
+github.com/vektah/gqlparser/v2/ast
+github.com/vektah/gqlparser/v2/gqlerror
+github.com/vektah/gqlparser/v2/lexer
+github.com/vektah/gqlparser/v2/parser
+github.com/vektah/gqlparser/v2/validator
+github.com/vektah/gqlparser/v2/validator/rules

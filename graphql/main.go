@@ -3,6 +3,10 @@ package main
 import (
 	"log"
 	"net/http"
+
+	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/99designs/gqlgen/handler"
+	"github.com/kelseyhightower/envconfig"
 )
 
 type AppConfig struct {
@@ -23,7 +27,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	http.Handle("/graphql", handler.NewDefaultServer(server.ToExecutableSchema()))
+	http.Handle("/graphql", handler.GraphQL(server.ToExecutableSchema()))
 	http.Handle("/playground", playground.Handler("akhil", "/graphql"))
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
